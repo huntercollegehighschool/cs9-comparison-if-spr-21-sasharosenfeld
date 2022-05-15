@@ -23,4 +23,3 @@ not a month
 '''
 
 #start writing your code below
-m = int(input
