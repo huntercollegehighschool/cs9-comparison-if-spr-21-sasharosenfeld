@@ -16,12 +16,18 @@ The smallest number is 2
 '''
 
 number = int(input("Enter a number: "))
-
 smallest = number
 
 number = int(input("Enter another number: "))
 
-if number < smallest:
+next = int(input("Enter another number: "))
+
+if next <= smallest and next <= number :
+  smallest = next
+elif smallest < next and smallest <= number: 
+  smallest = smallest 
+elif number < smallest and number < next:
   smallest = number
   
-print("The smallest number is ", smallest)
+print("The smallest number is", smallest)
+#done
